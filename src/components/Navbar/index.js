@@ -8,7 +8,7 @@ import IUser from '../../assets/icons/user.svg';
 const Navbar = () => {
   return (
     <header className="Navbar">
-      <section className="menu">
+      <nav className="menu">
       <h1 className="menu__logo">Kenai</h1>
         <ul>
           <li>
@@ -27,7 +27,7 @@ const Navbar = () => {
             <img src={IUser} alt="User icon" />
           </li>
         </ul>
-      </section>
+      </nav>
     </header>
   );
 };

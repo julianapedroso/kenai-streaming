@@ -1,0 +1,40 @@
+.Cards {
+  display: flex;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  & .card__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+
+    & #btn__genre {
+      color: var(--color-primary);
+      background: var(--color-tertiary);
+      padding: 0.5rem;
+      border: none;
+      border-radius: 0 8px 0 8px;
+      font-size: 0.8rem;
+      font-weight: normal;
+      line-height: 16px;
+    }
+
+    & .card__banner {
+      z-index: 3;
+    }
+
+    & h3 {
+      font-size: clamp(1.3rem, 3vw + 1rem, 1.3rem);
+      font-weight: 600;
+      line-height: 33px;
+    }
+  }
+}
