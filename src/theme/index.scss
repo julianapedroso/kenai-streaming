@@ -1,5 +1,5 @@
 @import "./global.scss";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -16,11 +16,15 @@ body {
   width: 100%;
   overflow: auto;
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--color-primary-contrast);
   line-height: var(--line-height);
-  background-image: url('../assets/images/background.png');
+  background-image: url("../assets/images/background.png");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 100%;
 }
 
 svg {
