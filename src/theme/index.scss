@@ -17,8 +17,10 @@ body {
   overflow: auto;
   font-size: 1rem;
   font-family: 'Open Sans', sans-serif;
-  // color: var(--color-primary-contrast);
+  color: var(--color-primary-contrast);
   line-height: var(--line-height);
+  background-image: url('../assets/images/background.png');
+  background-repeat: no-repeat;
 }
 
 svg {
