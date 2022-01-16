@@ -2,6 +2,16 @@
   display: flex;
   justify-content: space-between;
 
+  & .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw;
+    width: 100vw;
+    height: 10vh;
+    padding: 4% 2%;
+  }
+
   & .menu__logo {
     display: flex;
     justify-content: space-between;
@@ -16,16 +26,6 @@
     line-height: 66px;
   }
 
-  & .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100vw;
-    width: 100vw;
-    height: 10vh;
-    padding: 4% 2%;
-  }
-
   & svg {
     cursor: pointer;
 
@@ -36,7 +36,6 @@
       }
     }
   }
-
   & ul {
     list-style: none;
     font-size: 1.5rem;
@@ -46,7 +45,7 @@
     align-items: center;
   }
 
-  & a {
+  & .nav__item {
     color: #fff;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;

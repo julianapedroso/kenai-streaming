@@ -1,0 +1,111 @@
+.Profile {
+  background: var(--background-footer);
+  background-image: none;
+  height: 100vh;
+  overflow: hidden;
+
+  & .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw;
+    width: 100vw;
+    height: 10vh;
+    padding: 4% 2%;
+
+    & a {
+      text-decoration: none;
+    }
+  }
+
+  & .menu__logo {
+    background: linear-gradient(264.26deg, var(--color-gradient-dark) 0%, var(--color-gradient-light) 101.03%);
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Mukta", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 66px;
+  }
+
+  & .profile__container {
+    text-align: center;
+    padding: 10%;
+
+    & .profile__welcome-back {
+      color: var(--color-primary-contrast);
+      font-size: clamp(1.5rem, 3vw + 1rem, 3rem);
+      font-weight: normal;
+      padding-bottom: 2%;
+    }
+
+    & .profile__who-watching {
+      font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
+      font-weight: normal;
+      padding: 1.5% 0;
+    }
+
+    & .profiles {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5rem;
+      padding: 5% 0;
+
+      & .profile__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      & .profile__1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: linear-gradient(225deg, #781fd1 0%, #570eab 100%);
+      }
+
+      & .profile__2 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #64fa9b 0%, #5fe36a 100%);
+      }
+
+      & .profile__3 {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #4df0f3 0%, #4d7bfd 100%);
+      }
+
+      & p {
+        text-align: center;
+        padding: 1.5rem 0;
+      }
+    }
+
+    & #btn__add-profile {
+      color: var(--color-primary-contrast);
+      background: var(--color-tertiary);
+      border: none;
+      border-radius: 5px;
+      font-size: clamp(0.5rem, 1vw + 0.1rem, 0.9rem);
+      font-weight: bold;
+      padding: 0.8%;
+
+      cursor: pointer;
+
+      &:hover {
+        background: linear-gradient(264.26deg, var(--color-gradient-dark) 0%, var(--color-gradient-light) 101.03%);
+        transition: 0.3s ease all;
+        color: var(--color-primary-contrast);
+      }
+    }
+  }
+}
