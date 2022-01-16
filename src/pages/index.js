@@ -1,7 +1,7 @@
-import Home from './Home';
-import Profile from './Profile';
+import MoviePage from './MoviePage';
+import ProfilePage from './ProfilePage';
 
 export { 
-  Home, 
-  Profile 
+  MoviePage, 
+  ProfilePage, 
 };

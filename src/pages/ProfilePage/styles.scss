@@ -1,4 +1,4 @@
-.Profile {
+.ProfilePage {
   background: var(--background-footer);
   background-image: none;
   height: 100vh;
@@ -53,6 +53,11 @@
       gap: 5rem;
       padding: 5% 0;
 
+      & a {
+        text-decoration: none;
+        color: var(--color-primary-contrast);
+      }
+
       & .profile__wrapper {
         display: flex;
         flex-direction: column;
@@ -63,21 +68,7 @@
         }
       }
 
-      & .profile__1 {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background: linear-gradient(225deg, #781fd1 0%, #570eab 100%);
-      }
-
-      & .profile__2 {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background: linear-gradient(180deg, #64fa9b 0%, #5fe36a 100%);
-      }
-
-      & .profile__3 {
+      & .profile__item {
         width: 100px;
         height: 100px;
         border-radius: 50%;

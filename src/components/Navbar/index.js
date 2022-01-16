@@ -33,10 +33,14 @@ const Navbar = () => {
             </svg>
           </li>
           <li>
-            <a className="nav__item" href="/">Início</a>
+            <a className="nav__item" href="/">
+              Início
+            </a>
           </li>
           <li>
-            <a className="nav__item" href="/">Minha lista</a>
+            <a className="nav__item" href="/">
+              Minha lista
+            </a>
           </li>
           <li>
             <svg
@@ -63,7 +67,7 @@ const Navbar = () => {
             </svg>
           </li>
           <li>
-            <Link to={'/:id'}>
+            <Link to={'/'}>
               <svg
                 width="30"
                 height="30"

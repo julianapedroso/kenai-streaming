@@ -1,8 +1,8 @@
-export const goToHomePage = (history) => {
+export const goToProfilePage = (history) => {
   history.push('/');
 };
 
-export const goToProfilePage = (history, id) => {
+export const goToMoviePage = (history, id) => {
   history.push(`/${id}`);
 };
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles.scss';
 import {
   PopularSection,
   MovieDescription,
@@ -7,9 +6,9 @@ import {
   Footer,
 } from '../../components';
 
-const Home = () => {
+const MoviePage = () => {
   return (
-    <main className="Home">
+    <main className="MoviePage">
       <Navbar />
       <MovieDescription />
       <PopularSection />
@@ -18,4 +17,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default MoviePage;
