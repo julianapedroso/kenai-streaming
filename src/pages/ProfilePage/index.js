@@ -23,7 +23,7 @@ const ProfilePage = () => {
   return (
     <main className="ProfilePage">
       <nav className="menu">
-        <Link to={'/:id'}>
+        <Link to={'/moviepage'}>
           <h1 className="menu__logo">Kenai</h1>
         </Link>
       </nav>
@@ -34,7 +34,7 @@ const ProfilePage = () => {
           {users.map((user) => {
             return (
               <div key={user}>
-                <Link to={'/:id'}>
+                <Link to={'/moviepage'}>
                   <div className="profile__wrapper">
                     <div className="profile__item" />
                     <p>{user}</p>

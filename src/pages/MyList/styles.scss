@@ -1,0 +1,53 @@
+.MyList {
+  background: var(--background-footer);
+  background-image: none;
+  height: auto;
+  overflow-x: hidden;
+
+  & .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw;
+    width: 100vw;
+    height: 10vh;
+    padding: 4% 2%;
+
+    & a {
+      text-decoration: none;
+    }
+  }
+
+  & .menu__logo {
+    background: linear-gradient(264.26deg, var(--color-gradient-dark) 0%, var(--color-gradient-light) 101.03%);
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Mukta", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 66px;
+  }
+
+  & h2 {
+    font-size: clamp(1rem, 2vw + 0.8rem, 2rem);
+    font-weight: normal;
+    padding: 0 2%;
+  }
+
+  & .mylist__movies {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2% 0;
+
+    & img {
+      max-width: 20%;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

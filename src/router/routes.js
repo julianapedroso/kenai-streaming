@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes as Router, Route } from 'react-router-dom';
 // Components
-import { MoviePage, ProfilePage } from '../pages';
+import { MoviePage, ProfilePage, MyList } from '../pages';
 
 const Routes = () => {
   return (
@@ -10,7 +10,10 @@ const Routes = () => {
         <Route path="/" exact element={<ProfilePage />} />
       </Router>
       <Router>
-        <Route path="/:id" exact element={<MoviePage />} />
+        <Route path="/moviepage" exact element={<MoviePage />} />
+      </Router>
+      <Router>
+        <Route path="/mylist" exact element={<MyList />} />
       </Router>
     </BrowserRouter>
   );
