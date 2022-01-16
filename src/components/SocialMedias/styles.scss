@@ -1,0 +1,23 @@
+.SocialMedias {
+  padding-top: 1rem;
+
+  & .footer__social-medias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4rem;
+
+    & svg {
+      &:hover {
+        path {
+          stroke: var(--color-primary);
+          transition: 0.3s ease all;
+        }
+      }
+    }
+
+    & a img {
+      width: 100%;
+    }
+  }
+}

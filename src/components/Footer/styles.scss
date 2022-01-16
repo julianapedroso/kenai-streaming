@@ -1,0 +1,17 @@
+.Footer {
+  padding: 2%;
+  background: var(--background-footer);
+
+  & .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > h3 {
+      font-family: "Mukta", sans-serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 66px;
+    }
+  }
+}

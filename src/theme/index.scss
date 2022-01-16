@@ -27,6 +27,19 @@ body {
   max-width: 100%;
 }
 
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background-footer);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(264.26deg, var(--color-gradient-light) 0%, var(--color-gradient-dark) 101.03%);
+  border-radius: 20px;
+}
+
 svg {
   & > rect {
     fill: var(--color-primary);

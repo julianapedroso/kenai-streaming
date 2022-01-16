@@ -8,7 +8,7 @@
     align-items: center;
     background: linear-gradient(264.26deg, var(--color-gradient-dark) 0%, var(--color-gradient-light) 101.03%);
 
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Mukta", sans-serif;
     font-size: 2.5rem;
@@ -20,11 +20,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // position: fixed;
     max-width: 100vw;
     width: 100vw;
     height: 10vh;
     padding: 4% 2%;
+  }
+
+  & svg {
+    cursor: pointer;
+
+    &:hover {
+      path {
+        stroke: var(--color-primary);
+        transition: 0.3s ease all;
+      }
+    }
   }
 
   & ul {

@@ -5,10 +5,10 @@ const Cards = ({ title, image, genre, rating }) => {
   return (
     <main className="Cards">
       <section className="card__container">
-        <img className="card__banner" src={image} alt="" />
+        <img className="card__banner" src={image} alt="Movie Cover" />
         <article className="card__info">
           <button id="btn__genre">{genre}</button>
-          <img src={rating} alt="" />
+          <img src={rating} alt="Movie rating" />
           <h3>{title}</h3>
         </article>
       </section>

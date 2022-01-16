@@ -1,9 +1,14 @@
 .Cards {
   display: flex;
   position: relative;
+  margin-bottom: -0.5rem;
+
+  & .card__banner {
+    filter: brightness(85%);
+  }
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   & .card__info {
@@ -25,10 +30,6 @@
       font-size: 0.8rem;
       font-weight: normal;
       line-height: 16px;
-    }
-
-    & .card__banner {
-      z-index: 3;
     }
 
     & h3 {
