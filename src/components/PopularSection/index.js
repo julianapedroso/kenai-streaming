@@ -1,53 +1,45 @@
-import React from 'react';
-import { Cards } from '../../components';
+import React, { useState, useEffect } from 'react';
 import './styles.scss';
-// Assets
-import CdnShang from '../../assets/images/cover-shang.png';
-import CdnWishDragon from '../../assets/images/cover-wishdragon.png';
-import CdnLoki from '../../assets/images/cover-loki.png';
-import CdnSpiderman from '../../assets/images/cover-spiderman.png';
-import CdnWitcher from '../../assets/images/cover-witcher.png';
-import IRating5 from '../../assets/icons/rating5.svg';
-import IRating4 from '../../assets/icons/rating4.svg';
-import IRating3 from '../../assets/icons/rating3.svg';
+// API
+import api from '../../services/api';
+// Component
+import { Cards } from '../../components';
 
 const PopularSection = () => {
+  const [synopses, setSynopses] = useState([]);
+
+  useEffect(() => {
+    getSynopsesListItem();
+  }, []);
+
+  const getSynopsesListItem = async () => {
+    try {
+      const response = await api.get('/synopses');
+      setSynopses(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <main className="PopularSection">
       <article>
         <h2 className="title">Populares</h2>
       </article>
       <section className="section__card">
-        <Cards
-          image={CdnShang}
-          rating={IRating4}
-          genre="Ação"
-          title="Shang-Chi"
-        />
-        <Cards
-          image={CdnWishDragon}
-          rating={IRating3}
-          genre="Animação"
-          title="Wish Dragon"
-        />
-        <Cards
-          image={CdnLoki}
-          rating={IRating5}
-          genre="Fantasia"
-          title="Loki"
-        />
-        <Cards
-          image={CdnSpiderman}
-          rating={IRating5}
-          genre="Aventura"
-          title="Spider-Man"
-        />
-        <Cards
-          image={CdnWitcher}
-          rating={IRating5}
-          genre="Fantasia"
-          title="The Witcher"
-        />
+        {synopses?.map((item) => {
+          const { id, title, coverUrl, genre, rating, synopsis } = item;
+          return (
+            <Cards
+              key={id}
+              image={coverUrl}
+              title={title}
+              genre={genre}
+              rating={rating}
+              synopsis={synopsis}
+            />
+          );
+        })}
       </section>
     </main>
   );
