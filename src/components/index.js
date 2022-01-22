@@ -4,6 +4,7 @@ import Cards from './Cards';
 import PopularSection from './PopularSection';
 import Footer from './Footer';
 import SocialMedias from './SocialMedias';
+import Modal from './Modal';
 
 export {
   Navbar,
@@ -12,4 +13,5 @@ export {
   PopularSection,
   Footer,
   SocialMedias,
+  Modal,
 };

@@ -1,0 +1,50 @@
+.Modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8);
+
+  .modal__container {
+    padding: 5%;
+    align-items: center;
+
+    .modal__content {
+      font-size: 0.9rem;
+    }
+  }
+
+  .btn__close {
+    display: flex;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 32px;
+    height: 32px;
+    top: 0;
+    right: calc(-100% + 16px);
+    position: relative;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2.5px;
+      height: 20px;
+      background: var(--color-primary);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
