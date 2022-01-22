@@ -4,7 +4,7 @@
   height: 100vh;
   overflow: hidden;
 
-  & .menu {
+  .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,12 +13,12 @@
     height: 10vh;
     padding: 4% 2%;
 
-    & a {
+    a {
       text-decoration: none;
     }
   }
 
-  & .menu__logo {
+  .menu__logo {
     background: linear-gradient(264.26deg, var(--color-gradient-dark) 0%, var(--color-gradient-light) 101.03%);
 
     background-clip: text;
@@ -29,36 +29,36 @@
     line-height: 66px;
   }
 
-  & .profile__container {
+  .profile__container {
     text-align: center;
     padding: 10%;
 
-    & .profile__welcome-back {
+    .profile__welcome-back {
       color: var(--color-primary-contrast);
       font-size: clamp(1.5rem, 3vw + 1rem, 3rem);
       font-weight: normal;
       padding-bottom: 2%;
     }
 
-    & .profile__who-watching {
+    .profile__who-watching {
       font-size: clamp(1rem, 2vw + 1rem, 1.5rem);
       font-weight: normal;
       padding: 1.5% 0;
     }
 
-    & .profiles {
+    .profiles {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 5rem;
       padding: 5% 0;
 
-      & a {
+      a {
         text-decoration: none;
         color: var(--color-primary-contrast);
       }
 
-      & .profile__wrapper {
+      .profile__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -68,20 +68,20 @@
         }
       }
 
-      & .profile__item {
+      .profile__item {
         width: 100px;
         height: 100px;
         border-radius: 50%;
         background: linear-gradient(180deg, #4df0f3 0%, #4d7bfd 100%);
       }
 
-      & p {
+      p {
         text-align: center;
         padding: 1.5rem 0;
       }
     }
 
-    & #btn__add-profile {
+    #btn__add-profile {
       color: var(--color-primary-contrast);
       background: var(--color-tertiary);
       border: none;

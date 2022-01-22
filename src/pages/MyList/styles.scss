@@ -4,7 +4,7 @@
   height: auto;
   overflow-x: hidden;
 
-  & .menu {
+  .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,12 +13,12 @@
     height: 10vh;
     padding: 4% 2%;
 
-    & a {
+    a {
       text-decoration: none;
     }
   }
 
-  & .menu__logo {
+  .menu__logo {
     background: linear-gradient(264.26deg, var(--color-gradient-dark) 0%, var(--color-gradient-light) 101.03%);
 
     background-clip: text;
@@ -29,20 +29,20 @@
     line-height: 66px;
   }
 
-  & h2 {
+  h2 {
     font-size: clamp(1rem, 2vw + 0.8rem, 2rem);
     font-weight: normal;
     padding: 0 2%;
   }
 
-  & .mylist__movies {
+  .mylist__movies {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2% 0;
 
-    & img {
+    img {
       max-width: 20%;
 
       &:hover {

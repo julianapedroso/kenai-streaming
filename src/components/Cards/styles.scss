@@ -3,15 +3,16 @@
   position: relative;
   margin-bottom: -0.5rem;
 
-  & .card__banner {
+  .card__banner {
     filter: brightness(85%);
   }
 
   &:hover {
     transform: scale(1.05);
+    cursor: pointer;
   }
 
-  & .card__info {
+  .card__info {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -21,7 +22,7 @@
     bottom: 10%;
     left: 5%;
 
-    & #btn__genre {
+    #btn__genre {
       color: var(--color-primary);
       background: var(--color-tertiary);
       padding: 0.5rem;
@@ -32,7 +33,7 @@
       line-height: 16px;
     }
 
-    & h3 {
+    h3 {
       font-size: clamp(1.3rem, 3vw + 1rem, 1.3rem);
       font-weight: 600;
       line-height: 33px;

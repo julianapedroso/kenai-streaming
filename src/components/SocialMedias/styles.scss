@@ -1,13 +1,13 @@
 .SocialMedias {
   padding-top: 1rem;
 
-  & .footer__social-medias {
+  .footer__social-medias {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 4rem;
 
-    & svg {
+    svg {
       &:hover {
         path {
           stroke: var(--color-primary);
@@ -16,7 +16,7 @@
       }
     }
 
-    & a img {
+    a img {
       width: 100%;
     }
   }

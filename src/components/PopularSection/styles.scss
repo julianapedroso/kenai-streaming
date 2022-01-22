@@ -1,5 +1,5 @@
 .PopularSection {
-  & h2 {
+  h2 {
     font-weight: 500;
     padding: 2%;
 
@@ -13,7 +13,7 @@
     }
   }
 
-  & .section__card {
+  .section__card {
     padding: 0 2%;
     display: flex;
     justify-content: space-between;

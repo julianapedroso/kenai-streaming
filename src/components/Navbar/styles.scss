@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
 
-  & .menu {
+  .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +12,7 @@
     padding: 4% 2%;
   }
 
-  & .menu__logo {
+  .menu__logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,7 @@
     line-height: 66px;
   }
 
-  & svg {
+  svg {
     cursor: pointer;
 
     &:hover {
@@ -36,7 +36,8 @@
       }
     }
   }
-  & ul {
+
+  ul {
     list-style: none;
     font-size: 1.5rem;
     display: flex;
@@ -45,7 +46,7 @@
     align-items: center;
   }
 
-  & .nav__item {
+  .nav__item {
     color: #fff;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
