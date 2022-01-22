@@ -7,7 +7,15 @@
     align-items: center;
     gap: 4rem;
 
+    @media screen and (max-width: 425px) {
+      display: none;
+    }
+
     svg {
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
+      
       &:hover {
         path {
           stroke: var(--color-primary);

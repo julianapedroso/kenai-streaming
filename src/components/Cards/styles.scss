@@ -2,9 +2,18 @@
   display: flex;
   position: relative;
   margin-bottom: -0.5rem;
+  max-width: 100%;
 
   .card__banner {
     filter: brightness(85%);
+
+    @media screen and (max-width: 1440px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 15rem;
+    }
   }
 
   &:hover {
@@ -37,6 +46,10 @@
       font-size: clamp(1.3rem, 3vw + 1rem, 1.3rem);
       font-weight: 600;
       line-height: 33px;
+
+      @media screen and (max-width: 425px) {
+        font-size: 1.1rem;
+      }
     }
   }
 }

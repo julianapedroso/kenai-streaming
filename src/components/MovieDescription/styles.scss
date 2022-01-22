@@ -12,6 +12,11 @@
     font-weight: 600;
     line-height: 16px;
     margin-bottom: 1.5rem;
+
+    @media screen and (max-width: 425px) {
+      margin: 2%;
+      font-size: 0.85rem;
+    }
   }
 
   .icons {
@@ -22,6 +27,10 @@
 
     .icon__stars {
       margin-left: -0.5rem;
+
+      @media screen and (max-width: 425px) {
+        padding: 0 1%;
+      }
     }
   }
 
@@ -29,16 +38,25 @@
     font-size: clamp(2rem, 3vw + 1rem, 3.5rem);
     font-weight: 600;
     margin-bottom: 3.75rem;
+
+    @media screen and (max-width: 425px) {
+      padding: 0 2%;
+    }
   }
 
   .movie__description {
     font-size: clamp(0.5rem, 2vw + 0.6rem, 1.25rem);
     width: 50%;
+    padding: 0.5%;
 
-    // @media (max-width: 320px) {
-    //   width: 100%;
-    //   padding: 0 4%;
-    // }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 425px) {
+      padding: 0 2%;
+    }
   }
 
   #btn__watch-now {
@@ -47,12 +65,35 @@
     border: none;
     font-size: 1.3rem;
     font-weight: 600;
-    margin-top: 4rem;
+    margin-top: 4%;
+    margin-left: 0.5%;
     padding: 1rem;
-    max-width: 15%;
+    max-width: 100%;
     width: 15%;
 
     cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 1.1rem;
+      width: 18%;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.1rem;
+      width: 25%;
+    }
+
+    @media screen and (max-width: 425px) {
+      font-size: 1.1rem;
+      width: 40%;
+      margin-left: 2%;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 375px) {
+      font-size: 1rem;
+      width: 50%;
+      margin-left: 2%;
+    }
 
     &:hover {
       background: linear-gradient(264.26deg, var(--color-gradient-dark) 0%, var(--color-gradient-light) 101.03%);

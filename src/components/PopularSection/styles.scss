@@ -1,7 +1,11 @@
 .PopularSection {
   h2 {
     font-weight: 500;
-    padding: 2%;
+    padding: 2.5%;
+
+    @media screen and (max-width: 425px) {
+      padding: 4.5%;
+    }
 
     &::after {
       content: "";
@@ -10,14 +14,40 @@
       width: 3%;
       height: 2px;
       margin-top: 0.2rem;
+
+      @media screen and (max-width: 1440px) {
+        width: 4%;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 8%;
+      }
+
+      @media screen and (max-width: 425px) {
+        width: 13%;
+      }
     }
   }
 
   .section__card {
-    padding: 0 2%;
+    padding: 0 2.5%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
+
+    @media screen and (max-width: 1440px) {
+      flex-wrap: nowrap;
+    }
+
+    @media screen and (max-width: 768px) {
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 2.5rem;
+    }
+
+    @media screen and (max-width: 425px) {
+      padding: 4.5%;
+    }
   }
 }

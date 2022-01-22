@@ -10,6 +10,16 @@
     width: 100vw;
     height: 10vh;
     padding: 4% 2%;
+
+    & ul {
+      @media screen and (max-width: 1024px) {
+        font-size: 1.2rem;
+      } 
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
   }
 
   .menu__logo {
@@ -24,6 +34,11 @@
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 66px;
+
+    @media screen and (max-width: 425px) {
+      font-size: 2rem;
+      padding: 2%;
+    }
   }
 
   svg {
