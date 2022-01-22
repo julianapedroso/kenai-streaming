@@ -1,0 +1,44 @@
+{
+  "synopses": [
+    {
+      "id": 1,
+      "title": "Shang-Chi",
+      "coverUrl": "https://i.imgur.com/K2lmTCW.png",
+      "genre": "Ação",
+      "rating": "https://i.imgur.com/gSWx2Tc.png",
+      "synopsis": "Shang-Chi é o filho do líder de uma organização criminosa poderosa. O rapaz foi criado desde criança para ser um guerreiro, mas decidiu abandonar esse caminho e fugiu para viver uma vida pacífica. Porém, tudo isso muda quando ele é atacado por um grupo de assassinos e se vê forçado a enfrentar seu passado."
+    },
+    {
+      "id": 2,
+      "title": "Wish Dragon",
+      "coverUrl": "https://i.imgur.com/ZnnybLv.png",
+      "genre": "Animação",
+      "rating": "https://i.imgur.com/5FIKZmC.png",
+      "synopsis": "Din é um garoto obstinado que quer retomar contato com sua melhor amiga de infância. Ele descobre que tudo é possível ao conhecer um dragão que realiza sonhos."
+    },
+    {
+      "id": 3,
+      "title": "Loki",
+      "coverUrl": "https://i.imgur.com/Cp0X6GN.png",
+      "genre": "Fantasia",
+      "rating": "https://i.imgur.com/EQxOXuJ.png",
+      "synopsis": "Depois de roubar o Tesseract durante os eventos de Vingadores: Ultimato, uma versão alternativa de Loki é trazida para a misteriosa Autoridade de Variância Temporal, uma organização burocrática que existe fora do tempo e do espaço, e monitora a linha do tempo. Eles dão a Loki uma escolha: ser apagado da existência por ser uma 'variante do tempo' ou ajudar a consertar a linha do tempo e impedir uma ameaça maior."
+    },
+    {
+      "id": 4,
+      "title": "Spider-Man",
+      "coverUrl": "https://i.imgur.com/iOI1eAQ.png",
+      "genre": "Aventura",
+      "rating": "https://i.imgur.com/EQxOXuJ.png",
+      "synopsis": "Depois de ser picado por uma aranha geneticamente modificada em uma demonstração científica, o jovem nerd Peter Parker ganha superpoderes. Inicialmente, ele pretende usá-los para para ganhar dinheiro, adotando o nome de Homem-Aranha e se apresentando em lutas de exibição. Porém, ao presenciar o assassinando de seu tio Ben e sentir-se culpado, Peter decide não mais usar seus poderes para proveito próprio e sim para enfrentar o mal, tendo como seu primeiro grande desafio o psicótico Duende Verde."
+    },
+    {
+      "id": 5,
+      "title": "The Witcher",
+      "coverUrl": "https://i.imgur.com/nwnQ38N.png",
+      "genre": "Fantasia",
+      "rating": "https://i.imgur.com/EQxOXuJ.png",
+      "synopsis": "Geralt de Rivia é um solitário caçador de monstros, que luta para encontrar seu lugar num mundo onde pessoas são mais crueis que criaturas. Mas seu caminho irá cruzar com duas figuras que mudarão sua vida: a feiticeira Yennefer de Vengerberg e a princesa poderosa Cintran Ciri. A trama acompanha os três em linhas do tempo diferentes até que finalmente suas vidas são conectadas quando se juntam na Batalha de Sodden Hill contra os invasores de Nilfgaard."
+    }
+  ]
+}
