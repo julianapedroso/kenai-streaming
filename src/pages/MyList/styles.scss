@@ -1,8 +1,11 @@
 .MyList {
   background: var(--background-footer);
   background-image: none;
-  height: auto;
-  overflow-x: hidden;
+  height: 100vh;
+
+  @media screen and (min-width: 320px) and (max-width: 475px) {
+    height: auto;
+  }
 
   .menu {
     display: flex;
@@ -11,10 +14,18 @@
     max-width: 100vw;
     width: 100vw;
     height: 10vh;
-    padding: 4% 2%;
 
     a {
       text-decoration: none;
+      padding: 4% 2%;
+
+      @media screen and (max-width: 768px) {
+        padding-left: 4%;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 475px) {
+        padding-left: 6%;
+      }
     }
   }
 
@@ -27,6 +38,10 @@
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 66px;
+
+    @media screen and (min-width: 320px) and (max-width: 475px) {
+      font-size: 2rem;
+    }
   }
 
   h2 {
@@ -37,17 +52,48 @@
     @media screen and (max-width: 1440px) {
       font-size: 1.5rem;
     }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 4%;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 475px) {
+      padding: 0 8%;
+      font-size: 1.2rem;
+    }
   }
 
   .mylist__movies {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2% 0;
+    gap: 3rem;
+    padding: 2%;
+
+    @media screen and (max-width: 768px) {
+      padding: 4%;
+      gap: 4rem;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 475px) {
+      padding: 8%;
+      gap: 2rem;
+    }
 
     img {
       max-width: 20%;
+
+      @media screen and (max-width: 1024px) {
+        max-width: 30%;
+      }
+
+      @media screen and (max-width: 768px) {
+        max-width: 25%;
+      }
+
+      @media screen and (min-width: 320px) and (max-width: 475px) {
+        max-width: 100%;
+      }
 
       &:hover {
         transform: scale(1.05);
