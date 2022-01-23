@@ -11,13 +11,26 @@
     height: 10vh;
     padding: 4% 2%;
 
-    & ul {
+    button {
+      display: none;
+      background: transparent;
+      border: none;
+      color: var(--color-primary);
+      position: fixed;
+      right: 0;
+
+      .btn__icon {
+        font-size: 2rem;
+      }
+    }
+
+    #hidden {
+      display: flex;
+    }
+
+    ul {
       @media screen and (max-width: 1024px) {
         font-size: 1.2rem;
-      } 
-
-      @media screen and (max-width: 768px) {
-        display: none;
       }
     }
   }
@@ -78,6 +91,37 @@
     &:hover::after {
       background: linear-gradient(264.26deg, var(--color-gradient-dark) 0%, var(--color-gradient-light) 101.03%);
       transition: 0.5s ease all;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu button {
+      display: flex;
+      margin-right: 5%;
+      z-index: 99;
+    }
+
+    .menu ul {
+      display: none;
+    }
+
+    #hidden {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: var(--background-footer);
+      width: 40%;
+      height: 100%;
+      z-index: 9;
+      padding: 50% 0;
+
+      @media screen and (min-width: 320px) and (max-width: 475px) {
+        width: 60%;
+      }
     }
   }
 }

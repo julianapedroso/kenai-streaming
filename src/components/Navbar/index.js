@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.scss';
+// Material Icons
+import MenuIcon from '@material-ui/icons/Menu';
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <header className="Navbar">
       <nav className="menu">
         <h1 className="menu__logo">Kenai</h1>
-        <ul>
+        <ul id={showMenu ? 'hidden' : ''}>
           <li>
             <svg
               width="30"
@@ -93,6 +97,9 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+        <button className="btn__open" onClick={() => setShowMenu(!showMenu)}>
+          <MenuIcon className="btn__icon" />
+        </button>
       </nav>
     </header>
   );
